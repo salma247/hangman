@@ -47,6 +47,21 @@
   position: absolute;
 }
 
+@media (max-width: 500px){
+  .bar-bottom{
+    width: 150px;
+  }
+
+  .bar-middle{
+    margin-left: 70px;
+  }
+
+  .bar-top{
+    width: 100px;
+    margin-left: 70px;
+  }
+}
+
 /* Man */
 .man-head{
   width: 50px;
@@ -111,6 +126,16 @@
   transform-origin: right bottom;
 }
 
+@media (max-width: 500px){
+  .man-leftarm, .man-rightarm{
+    width: 80px;
+  }
+
+  .man-rightarm{
+    right: -80px;
+  }
+}
+
 /*  Hangman text */
 
 .hangman-text{
@@ -124,6 +149,12 @@
 
 .letter{
   border-bottom: .1em solid black;
+}
+
+@media (max-width: 500px){
+  .hangman-text{
+    font-size: 4rem;
+  }
 }
 
 /* Keyboard */
@@ -164,3 +195,11 @@
   background-color: hsl(200, 100%, 75%);
 }
 
+@media (max-width: 500px){
+  .keyboard{
+    grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+  }
+  .key{
+    font-size: 2rem;
+  }
+}
