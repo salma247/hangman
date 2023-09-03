@@ -1,27 +1,48 @@
-# React + TypeScript + Vite
+# React Hangman Game with TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [Project Name](#project-name)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Demo](#demo)
+  - [Installation](#installation)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## Expanding the ESLint configuration
+This is a Hangman game built with React and TypeScript. It is a simple game where the user has to guess a word by guessing the letters that make up the word. The user has 6 lives to guess the word. If the user guesses the word correctly, the user wins. If the user runs out of lives, the user loses.
+## Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[Live Demo](https://salma247.github.io/note-taking-app/)
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+# Clone the repository
+git clone https://github.com/salma247/hangman.git
+
+# Change into the project directory
+cd your-project
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Features
+
+- User can guess a letter
+- User can see the number of lives remaining
+- User can see the letters that have been guessed
+- User can see the letters that have not been guessed
+
+## Technologies Used
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [material-ui](https://material-ui.com/)
+
